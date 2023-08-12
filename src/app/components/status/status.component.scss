@@ -1,0 +1,40 @@
+@import "angular";
+
+.status {
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+    padding: 24px 15px 24px 20px;
+    border-radius: 15px;
+    background: $lightBlue;
+  }
+
+  &__info {
+  }
+
+  &__title {
+    color: $violet;
+    font-family: $ff;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  &__desc {
+    color: $violet;
+    font-family: $ff;
+    font-size: 12px;
+    font-weight: 400;
+    opacity: 0.5;
+  }
+}
+.material-icons {
+    color: $violet;
+}
