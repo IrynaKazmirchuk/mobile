@@ -1,0 +1,14 @@
+<div class="sides">
+  <div class="sides__list">
+    <div class="sides__item"*ngFor="let item of sides"
+    [class._green]="item.id == 1"
+    [class._pink]="item.id == 2">
+      <div class="sides__title">{{item.title}}</div>
+      <div class="sides__info">
+        <div class="sides__name">{{item.name1}}</div>
+        <div class="sides__name">{{item.name2}}</div>
+        <div class="sides__name">{{item.name3}}</div>
+      </div>
+    </div>
+  </div>
+</div>

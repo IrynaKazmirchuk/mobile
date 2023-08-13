@@ -15,9 +15,19 @@
     padding: 24px 15px 24px 20px;
     border-radius: 15px;
     background: $lightBlue;
-  }
-
-  &__info {
+    
+    &._pink {
+      background: $lightPink;
+      .icon {
+        color: orange;
+      }
+      .status__title {
+        color: orange;
+      }
+      .status__desc {
+        color: $lightBrown;
+      }
+    }
   }
 
   &__title {
@@ -25,6 +35,7 @@
     font-family: $ff;
     font-size: 16px;
     font-weight: 400;
+    margin-bottom: 10px;
   }
 
   &__desc {
@@ -36,5 +47,6 @@
   }
 }
 .material-icons {
-    color: $violet;
+  color: $violet;
 }
+

@@ -1,0 +1,64 @@
+@import "angular";
+.reports {
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  &__item {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 15px;
+    background: $lightBlue;
+    &._green {
+      background: $lightGreen;
+      .icon,
+      .reports__name {
+        color: #479696;
+      }
+      .reports__text {
+        color: #8daeae;
+        opacity: 0.7;
+      }
+    }
+    &._pink {
+      background: $lightPink;
+      .icon,
+      .reports__name {
+        color: $orange;
+      }
+      .reports__text {
+        color: $lightBrown;
+      }
+    }
+    &._white {
+      background: #fdf9fb;
+      .icon,
+      .reports__name {
+        color: #c93f8d;
+      }
+      .reports__text {
+        color: #E791BE;
+        opacity: 0.7;
+      }
+    }
+  }
+
+  &__name {
+    color: $violet;
+    font-family: $ff;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  &__text {
+    color: $violet;
+    font-family: $ff;
+    font-size: 10px;
+    font-weight: 400;
+    opacity: 0.5;
+  }
+}

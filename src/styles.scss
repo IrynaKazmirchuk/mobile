@@ -1,2 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'scss/main';
+.title {
+    color: $dark-purple;
+    font-family: $ff;
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}

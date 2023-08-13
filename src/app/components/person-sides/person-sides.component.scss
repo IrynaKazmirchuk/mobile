@@ -1,0 +1,41 @@
+@import "angular";
+.sides {
+  &__list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+
+  &__item {
+    &._pink{
+        .sides__name {
+            background: $lightPink;
+            color: #FF7E73;
+        }
+    }
+  }
+
+  &__title {
+    color: $dark-purple;
+    font-family: $ff;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+  }
+
+  &__info {
+    display: flex;
+    gap: 5px;
+  }
+
+  &__name {
+    border-radius: 8px;
+    background: $lightGreen;
+    color: $green;
+    font-family: $ff;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 8px 10px;
+  }
+}

@@ -1,25 +1,19 @@
 <div class="status">
   <div class="status__list">
-    <div class="status__item" *ngFor="Let item of status" [class._blue]="item.title== 'How was your day?'" [class._pink]="item.title== 'Current Transist: 3rd House'" >
-      <span class="material-icons calendar"> {{item.calendar}} </span>
+    <div
+      class="status__item"
+      *ngFor="let item of status"
+      [class._blue]="item.id == 1"
+      [class._pink]="item.id == 2"
+    >
+      <span class="material-icons icon"> {{ item.icon }} </span>
       <div class="status__info">
-        <div class="status__title">{{item.title}}</div>
+        <div class="status__title">{{ item.title }}</div>
         <div class="status__desc">
-          {{item.desc}}
+          {{ item.desc }}
         </div>
       </div>
-      <span class="material-icons arrow"> {{item.arrow}} </span>
+      <span class="material-icons arrow"> navigate_next </span>
     </div>
-    <!-- <div class="status__item">
-      <span class="material-icons clock"> {{item.clock}} </span>
-      <div class="status__info">
-        <div class="status__title">Current Transist: 3rd House</div>
-        <div class="status__desc">
-          This is demonstrate siblings, hobbies, efforts, confidence, friends
-          and short tr...
-        </div>
-      </div>
-      <span class="material-icons"> navigate_next </span>
-    </div> -->
   </div>
 </div>

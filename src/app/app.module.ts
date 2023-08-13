@@ -12,6 +12,9 @@ import { NewsComponent } from './components/news/news.component';
 import { TasksComponent } from './components/tasks/tasks.component';
 import { StatusComponent } from './components/status/status.component';
 import { ProgressComponent } from './components/progress/progress.component';
+import { PersonDataComponent } from './components/person-data/person-data.component';
+import { PersonSidesComponent } from './components/person-sides/person-sides.component';
+import { PersonReportsComponent } from './components/person-reports/person-reports.component';
 
 
 @NgModule({
@@ -26,6 +29,9 @@ import { ProgressComponent } from './components/progress/progress.component';
     TasksComponent,
     StatusComponent,
     ProgressComponent,
+    PersonDataComponent,
+    PersonSidesComponent,
+    PersonReportsComponent,
 
   ],
   imports: [
