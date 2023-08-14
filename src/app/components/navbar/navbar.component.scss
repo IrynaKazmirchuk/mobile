@@ -1,17 +1,40 @@
 @import "angular";
 
 .nav {
+  padding: 20px;
+  @include tablet {
+    margin-bottom: 60px;
+  }
+  
   &__ul {
-    display: flex;
+    display: flex ;
     justify-content: space-between;
     align-items: center;
+    @include tablet {
+      justify-content: flex-start;
+      gap: 30px;
+    }
   }
 
   &__li {
   }
+  &__link-title {
+    display: none;
+    @include tablet {
+      display: inline-block;
+    }
+  }
 
   &__a {
+   
+      display: inline-flex;
+      align-items: center;
+      gap: 15px;
+      color: $gray;
+      transition: $transition;
+   
     &._active {
+      color: $purple;
       .material-icons {
         color: $purple;
       }
@@ -21,4 +44,8 @@
 .material-icons {
   color: $gray;
   transition: $transition;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 1;
+  @include adaptiv-font(30, 24);
 }

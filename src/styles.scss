@@ -1,9 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
-@import 'scss/main';
+@import "scss/main";
 .title {
-    color: $dark-purple;
-    font-family: $ff;
-    font-size: 24px;
-    font-weight: 300;
-    margin-bottom: 15px;
+  color: $dark-purple;
+  font-family: $ff;
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 15px;
+  @include adaptiv-font(36, 24);
+  @include tablet {
+    margin-bottom: 30px;
+  }
 }

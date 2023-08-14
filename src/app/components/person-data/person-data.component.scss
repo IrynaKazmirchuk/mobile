@@ -5,8 +5,17 @@
   align-items: center;
   gap: 38px;
   margin-bottom: 30px;
+  @include tablet {
+    gap: 200px;
+    margin-bottom: 60px;
+  }
 
-  &__image {
+  &__image,
+  img {
+    @include tablet {
+      min-width: 250px;
+      height: 100%;
+    }
   }
 
   &__info {
@@ -18,6 +27,10 @@
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 4px;
+    @include adaptiv-font(28, 16);
+    @include tablet {
+      margin-bottom: 10px;
+    }
   }
 
   &__prof {
@@ -27,6 +40,10 @@
     font-weight: 400;
     opacity: 0.6;
     margin-bottom: 11px;
+    @include adaptiv-font(22, 14);
+    @include tablet {
+      margin-bottom: 20px;
+    }
   }
 
   &__a {
@@ -35,5 +52,6 @@
     font-size: 12px;
     font-weight: 400;
     text-decoration-line: underline;
+    @include adaptiv-font(18, 12);
   }
 }

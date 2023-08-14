@@ -5,6 +5,10 @@
     grid-template-columns: 1fr;
     gap: 20px;
     margin-bottom: 40px;
+    @include tablet {
+      grid-template-columns: 1fr 1fr;
+      margin-bottom: 100px;
+    }
   }
 
   &__item {
@@ -12,6 +16,9 @@
         .sides__name {
             background: $lightPink;
             color: #FF7E73;
+            &._pink {
+              display: none;
+            }
         }
     }
   }
@@ -22,11 +29,18 @@
     font-size: 14px;
     font-weight: 500;
     margin-bottom: 8px;
+    @include adaptiv-font(20, 14);
+    @include tablet {
+      margin-bottom: 15px;
+    }
   }
 
   &__info {
     display: flex;
     gap: 5px;
+    @include tablet {
+      gap: 10px;
+    }
   }
 
   &__name {
@@ -37,5 +51,6 @@
     font-size: 12px;
     font-weight: 500;
     padding: 8px 10px;
+    @include adaptiv-font(18, 12);
   }
 }

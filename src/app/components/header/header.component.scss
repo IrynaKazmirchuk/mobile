@@ -1,20 +1,26 @@
-@import 'angular';
+@import "angular";
 
 .header {
+  padding: 20px 20px 0 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 40px;
   .material-icons {
     cursor: pointer;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 1;
+    @include adaptiv-font(36, 24);
   }
-  
+
   &__title {
     color: $dark-purple;
     text-align: center;
     font-family: $ff;
     font-size: 16px;
     font-weight: 500;
+    @include adaptiv-font(24, 16);
   }
 }
 .header-menu {

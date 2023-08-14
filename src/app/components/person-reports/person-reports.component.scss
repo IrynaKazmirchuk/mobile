@@ -1,9 +1,13 @@
 @import "angular";
 .reports {
+  margin-bottom: 40px;
   &__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
+    @include tablet {
+      gap: 20px;
+    }
   }
 
   &__item {
@@ -13,6 +17,14 @@
     padding: 20px;
     border-radius: 15px;
     background: $lightBlue;
+    @include tablet{
+      display: grid;
+      gap: 25px;
+    }
+    .icon {
+      color: $violet;
+    }
+   
     &._green {
       background: $lightGreen;
       .icon,
@@ -35,13 +47,13 @@
       }
     }
     &._white {
-      background: #fdf9fb;
+      background: $bgLight;
       .icon,
       .reports__name {
-        color: #c93f8d;
+        color: $pink;
       }
       .reports__text {
-        color: #E791BE;
+        color: #e791be;
         opacity: 0.7;
       }
     }
@@ -52,6 +64,7 @@
     font-family: $ff;
     font-size: 12px;
     font-weight: 500;
+    @include adaptiv-font(18, 12);
   }
 
   &__text {
@@ -60,5 +73,12 @@
     font-size: 10px;
     font-weight: 400;
     opacity: 0.5;
+    @include adaptiv-font(16, 10);
+  }
+  .material-icons {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 1;
+    @include adaptiv-font(36, 24);
   }
 }

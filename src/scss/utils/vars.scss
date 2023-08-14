@@ -1,15 +1,34 @@
 $ff:'Roboto', sans-serif;
+
+$white: #fff;
 $gray: #8B97A8;
+
+$bgLight: #fdf9fb;
+
 $dark-purple: #595085;
 $purple: #3D3270;
-$transition: .2s all ease-in-out;
-$white: #fff;
-$lightBlue: #F6F5FB;
-$lightGreen: #F5F9F9;
-$lightPink: #FFF4F4;
-$orange:#FF5648;
-$dark-orange:#FF3726;
-$green:#479696;
+
 $violet:#403572;
 $lightViolet:#61598B;
+
+$pink: #c93f8d;
+$lightPink: #FFF4F4;
+
+$green:#479696;
+$lightGreen: #F5F9F9;
+
+$orange:#FF5648;
+$dark-orange:#FF3726;
+
+$lightBlue: #F6F5FB;
+
 $lightBrown: #A27A7A;
+
+$transition: .2s all ease-in-out;
+
+$desktop-small: 1200px;
+$tablet: 992px;
+$tablet-small: 767px;
+$mobile: 576px;
+
+$maxWidth: 1150;

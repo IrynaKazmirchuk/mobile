@@ -3,29 +3,39 @@
 .progress {
     padding: 15px 0;
     margin-bottom: 40px;
+    @include tablet {
+      margin-bottom: 70px;
+    }
   &__title {
     color: $dark-purple;
     font-family: $ff;
     font-size: 18px;
     font-weight: 300;
     margin-bottom: 10px;
+    @include adaptiv-font(24, 18);
     & span {
-      color: #c93f8d;
+      color: $pink;
       font-weight: 400;
     }
   }
 
   &__bar {
     border-radius: 5px;
-    background: #fdf9fb;
+    background: $bgLight;
     padding: 2px;
     position: relative;
+    @include tablet {
+      padding: 6px;
+    }
   }
 
   &__line {
     border-radius: 5px;
-    background: #c93f8d;
+    background: $pink;
     height: 4px;
     width: 60%;
+    @include tablet {
+      height: 12px;
+    }
   }
 }

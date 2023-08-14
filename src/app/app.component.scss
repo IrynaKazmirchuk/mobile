@@ -1,1 +1,13 @@
 @import 'angular';
+
+app-header {
+    @include tablet {
+        display: none;
+    }
+}
+
+app-navbar {
+    @include tablet {
+        order: -1;
+    }
+}

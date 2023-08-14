@@ -1,7 +1,7 @@
 body {
     font-family: $ff;
     color: $gray;
-    padding: 30px;
+        
 }
 router-outlet {
     display: none;
@@ -13,4 +13,15 @@ app-root {
     display: grid;
     grid-template-rows: auto 1fr auto;
     height: 100%;
+}
+.container {
+    max-width: 1200px;
+    margin-inline: auto;
+    width: 100%;
+    height: 100%;
+}
+.main {
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0 20px;
 }
